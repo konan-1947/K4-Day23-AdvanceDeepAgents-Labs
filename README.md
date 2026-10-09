@@ -1,5 +1,9 @@
 # Deep Research Agent (Deep Agents + Sandbox)
 
+**Sinh viên:** Vũ Đình Đăng
+
+**Mã sinh viên:** 2A202602946
+
 Lab dựng một **hệ thống deep research đa tác tử**: người dùng chỉ cần nhập một chủ đề (ví dụ `survey about world model`), hệ thống tự lập kế hoạch, giao việc cho nhiều subagent, tìm tài liệu trên arXiv, Hugging Face và web, rồi viết một **báo cáo có trích dẫn**.
 
 Hình thức: **bài thực hành cá nhân**. Ngôn ngữ lập trình: Python 3.11 trở lên.
@@ -94,10 +98,40 @@ Kết quả nằm ở `reports/survey-about-world-model.md` cùng `.sources.json
 
 ## 6. Chủ đề và nộp bài
 
-- Chạy đủ **5 chủ đề** trong [`topics.md`](topics.md), mỗi chủ đề một lần.
+- Chạy đủ **5 chủ đề** trong [`topics.md`](topics.md), mỗi chủ đề một lần:
+  1. `survey about world model`
+  2. `survey about reinforcement learning for LLM reasoning`
+  3. `survey about LLM agents and tool use`
+  4. `survey about video and multimodal generation`
+  5. `survey about efficient inference and small language models`
 - Commit mã nguồn và toàn bộ `reports/`, đẩy lên một **public repo** GitHub và nộp link.
 - Kiểm tra trước khi nộp: chạy **`python self_check.py`** (không tốn token): nó kiểm tra đủ 5 báo cáo, `meta.json`, trích dẫn bằng `check_citations.py` của bạn, và không có `.env`/khóa nào trong git.
 - Cách chấm: xem [`RUBRIC.md`](RUBRIC.md).
+
+### 6.1. Cách đọc thư mục `reports/`
+
+Mỗi lần chạy thành công một chủ đề, hệ thống tạo ra bộ 3 tệp đồng bộ trong thư mục `reports/`:
+
+1. **`<slug>.md` (Báo cáo khảo cứu)**:
+   - Định dạng Markdown theo đúng cấu trúc chuẩn của `REPORT_TEMPLATE.md`: `# Title`, `## TL;DR`, `## Background`, các `## <Theme>`, `## Trends and open problems`, và `## References`.
+   - Mỗi nhận định quan trọng trong thân bài đều có trích dẫn `[n]`.
+   - Danh sách `## References` được tự động sinh bởi `finalize_citations.py`: đúng 1 dòng cho mỗi nguồn, bắt đầu bằng `[n]` và chứa duy nhất 1 URL tương ứng.
+
+2. **`<slug>.sources.json` (Danh sách nguồn trích dẫn)**:
+   - Danh sách JSON chứa các nguồn tài liệu thực tế được trích dẫn trong bài viết.
+   - Mỗi mục gồm: `{"n": int, "id": str, "url": str, "title": str, "date": str, "source": str}`.
+   - Thuộc tính `source` thuộc một trong 4 họ: `arxiv`, `hf-daily`, `hf-search`, `web`.
+   - Đảm bảo có ít nhất 3 họ nguồn khác nhau và không chứa URL trùng lặp.
+
+3. **`<slug>.meta.json` (Bằng chứng nghiệm thu tự động)**:
+   - `topic`: Tên đề tài khảo cứu.
+   - `model`: Mô hình LLM được sử dụng.
+   - `elapsed_s`: Thời gian thực hiện (giây).
+   - `subagent_calls`: Số lần Lead agent phân công việc cho subagent qua công cụ `task` (yêu cầu $\ge 3$).
+   - `tool_calls`: Thống kê số lần gọi của từng công cụ.
+   - `tokens`: Lượng token tiêu thụ của Lead agent (`input` và `output`).
+   - `n_sources`: Tổng số nguồn tài liệu được sử dụng.
+   - `source_families`: Danh sách các họ nguồn có trong báo cáo (yêu cầu $\ge 3$ họ nguồn để đạt điểm Rubric 2.2).
 
 ## 7. Thời gian, chi phí và an toàn
 

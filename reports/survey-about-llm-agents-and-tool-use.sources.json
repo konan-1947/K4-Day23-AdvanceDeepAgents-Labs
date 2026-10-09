@@ -1,0 +1,74 @@
+[
+  {
+    "n": 1,
+    "id": "2210.03629",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "date": "2022-10-06",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2308.11432",
+    "url": "https://arxiv.org/abs/2308.11432",
+    "title": "A Survey on Large Language Model based Autonomous Agents",
+    "date": "2023-08-22",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2302.04761",
+    "url": "https://arxiv.org/abs/2302.04761",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "date": "2023-02-09",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "2307.16789",
+    "url": "https://huggingface.co/papers/2307.16789",
+    "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "date": "2023-07-31",
+    "source": "hf-daily"
+  },
+  {
+    "n": 5,
+    "id": "2305.15334",
+    "url": "https://huggingface.co/papers/2305.15334",
+    "title": "Gorilla: Large Language Model Connected with Massive APIs",
+    "date": "2023-05-24",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2308.08155",
+    "url": "https://arxiv.org/abs/2308.08155",
+    "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+    "date": "2023-08-16",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "2308.00352",
+    "url": "https://arxiv.org/abs/2308.00352",
+    "title": "MetaGPT: Meta Programming for Multi-Agent Collaborative Framework",
+    "date": "2023-08-01",
+    "source": "arxiv"
+  },
+  {
+    "n": 8,
+    "id": "anthropic-agents",
+    "url": "https://www.anthropic.com/research/building-effective-agents",
+    "title": "Building Effective Agents",
+    "date": "2024-12-19",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "deepagents-docs",
+    "url": "https://docs.langchain.com/oss/python/deepagents/overview",
+    "title": "Deep Agents Overview and Tool Architecture",
+    "date": "2024-11-01",
+    "source": "web"
+  }
+]

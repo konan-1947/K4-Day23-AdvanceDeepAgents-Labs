@@ -1,0 +1,74 @@
+[
+  {
+    "n": 1,
+    "id": "1803.10122",
+    "url": "https://arxiv.org/abs/1803.10122",
+    "title": "World Models",
+    "date": "2018-03-27",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "1912.01603",
+    "url": "https://arxiv.org/abs/1912.01603",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "date": "2019-12-03",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2301.04104",
+    "url": "https://arxiv.org/abs/2301.04104",
+    "title": "Mastering Diverse Domains through World Models",
+    "date": "2023-01-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "2209.00588",
+    "url": "https://huggingface.co/papers/2209.00588",
+    "title": "Transformers are Sample-Efficient World Models",
+    "date": "2022-09-01",
+    "source": "hf-daily"
+  },
+  {
+    "n": 5,
+    "id": "2404.08471",
+    "url": "https://huggingface.co/papers/2404.08471",
+    "title": "V-JEPA: Video Joint-Embedding Predictive Architecture",
+    "date": "2024-04-12",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2408.14837",
+    "url": "https://huggingface.co/papers/2408.14837",
+    "title": "Diffusion Models Are Real-Time Game Engines",
+    "date": "2024-08-27",
+    "source": "hf-daily"
+  },
+  {
+    "n": 7,
+    "id": "sora-2024",
+    "url": "https://openai.com/index/video-generation-models-as-world-simulators",
+    "title": "Video generation models as world simulators",
+    "date": "2024-02-15",
+    "source": "web"
+  },
+  {
+    "n": 8,
+    "id": "2405.03683",
+    "url": "https://arxiv.org/abs/2405.03683",
+    "title": "Understanding the World through Action: A Survey on World Models for Robotics and Autonomous Driving",
+    "date": "2024-05-06",
+    "source": "arxiv"
+  },
+  {
+    "n": 9,
+    "id": "lecun-jepa",
+    "url": "https://openreview.net/forum?id=BZ5a1r-kVsf",
+    "title": "A Path Towards Autonomous Machine Intelligence Version 0.9.2",
+    "date": "2022-06-27",
+    "source": "web"
+  }
+]
